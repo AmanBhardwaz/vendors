@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadside Food Vendors</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">StreetEats</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#vendors">Vendors</a>
+                <a href="#menu">Menu</a>
+                <a href="#orders" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Welcome to StreetEats</h1>
+            <p>Discover the best roadside food vendors near you</p>
+            <button onclick="showVendors()">Find Vendors</button>
+        </section>
+
+        <section id="vendors" class="vendors-section">
+            <h2>Our Vendors</h2>
+            <div id="vendor-grid" class="vendor-grid"></div>
+        </section>
+
+        <section id="menu" class="menu-section">
+            <h2>Menu</h2>
+            <div id="menu-items" class="menu-grid"></div>
+        </section>
+
+        <section id="orders" class="orders-section">
+            <h2>My Orders</h2>
+            <div id="order-list"></div>
+            <button id="checkout-btn" class="checkout-btn">Proceed to Checkout</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 StreetEats. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
